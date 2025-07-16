@@ -144,3 +144,18 @@ footer {
     text-align: center;
     margin-top: 30px;
 }
+
+@media (max-width: 768px) {
+    /* on smaller screens, stack the about me content */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* add this rule to make project cards stack on mobile */
+    .project-card {
+        /* the flex property will now default to its initial values */
+        /* this effectively makes each card take up the full width */
+        flex-basis: 100%;
+    }
+}
