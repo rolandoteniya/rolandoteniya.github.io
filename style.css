@@ -1,0 +1,131 @@
+h1 {
+    text-align: center;
+    color: #5067a2;
+}
+
+/* navigation bar styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #333;
+}
+
+/* individual navigation items */
+nav ul li {
+    display: inline-block;
+}
+
+/* navigation links */
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+/* hover effect for links */
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* style for the active/current page link */
+nav ul li a.active {
+    background-color: #5067a2;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+/* new flexbox rules */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*make body at least the full viewport height*/
+}
+
+
+.container {
+    /* this tells container to grow and fill available space */
+    flex: 1;
+
+    /* these rules center the content inside the container */
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* a helper class to center content inside the container */
+.container-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-content p {
+    text-align: left;
+}
+
+.project-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 300px;
+}
+
+.project-card a {
+    background-color: #5067a2;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.contact-links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-links a {
+    background-color: #5067a2;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
